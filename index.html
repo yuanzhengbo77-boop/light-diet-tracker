@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f7f7f2"><title>轻盈 · 饮食记录</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="app">
+  <header><div><p class="eyebrow">SUNDAY · 9月13日</p><h1>今天吃得怎么样？</h1></div><button class="icon-btn" id="settingsBtn">⚙</button></header>
+  <section class="hero card"><div class="hero-top"><div><span class="muted">今日热量</span><strong id="kcal">0</strong><span class="unit">/ 1750 kcal</span></div><div class="ring" id="ring"><span id="kcalPct">0%</span></div></div><div class="progress"><i id="kcalBar"></i></div><div class="remaining">还可以吃 <b id="remaining">1750</b> kcal</div></section>
+  <section class="macro-grid" id="macros"></section>
+  <section class="section"><div class="section-title"><h2>快速添加</h2><button class="text-btn" id="allFoods">全部食物</button></div><div class="quick-list" id="quickList"></div></section>
+  <section class="section"><div class="section-title"><h2>今天的记录</h2><span class="muted" id="mealCount">0 项</span></div><div id="log" class="log"></div></section>
+  <section class="section"><div class="section-title"><h2>身体记录</h2><button class="text-btn" id="saveBody">保存</button></div><div class="body-grid"><label>体重 <input id="weight" type="number" placeholder="kg"></label><label>饮水 <input id="water" type="number" placeholder="ml"></label></div><label class="check"><input id="bowel" type="checkbox"> 今天排便了</label></section>
+  <nav><button class="active">⌂<small>今天</small></button><button id="statsBtn">◷<small>趋势</small></button><button id="addBtn" class="add">＋</button><button id="foodBtn">♡<small>我的食物</small></button><button id="moreBtn">⋯<small>更多</small></button></nav>
+</main><div class="sheet hidden" id="sheet"><div class="sheet-inner"><div class="sheet-head"><h2 id="sheetTitle">选择食物</h2><button class="close" id="closeSheet">×</button></div><input class="search" id="search" placeholder="搜索食物…"><div id="categories"></div></div></div><script src="app.js"></script></body></html>
